@@ -1,10 +1,5 @@
 from ipdb import set_trace
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker, aliased
 import time
-
-engine = create_engine('sqlite:///development.db')
-session = sessionmaker(bind=engine)()
 
 # newest trial WORKS FOR EVERYTHING SO FAR!!!!  MAKE SURE YOU HAVE pass funcitons in for unused options.
 def dialogue_block(texts, next_func=None, choices=None):

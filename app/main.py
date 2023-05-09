@@ -1,5 +1,3 @@
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
 from ipdb import set_trace
 
 from helpers import *
@@ -8,9 +6,6 @@ from responses_c import *
 from responses_f import *
 import os
 import platform
-
-engine = create_engine('sqlite:///development.db')
-session = sessionmaker(bind=engine)()
 
 if __name__ == '__main__':
     def main_menu():
