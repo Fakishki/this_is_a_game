@@ -2,7 +2,6 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from ipdb import set_trace
 
-from models import Airline, Flight, Passenger
 from helpers import *
 from responses_b import *
 from responses_c import *
